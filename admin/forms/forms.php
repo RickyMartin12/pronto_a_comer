@@ -310,7 +310,11 @@ function envioInformacoes($nome, $email, $message)
         // Corpo alternativo caso email não suporte html
         $mail->AltBody = 'Mensangem simples';
 
-        $mail->send();
+        if (!$mail->send()) {
+            echo "Erro no Mailer: " . $mail->ErrorInfo;
+        } else {
+            echo 'mensagem enviada! <br>';
+        }
 
 
     }
