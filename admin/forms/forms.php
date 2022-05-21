@@ -312,38 +312,7 @@ function envioInformacoes($nome, $email, $message)
 
         $mail->send();
 
-        $mail_server = new PHPMailer(true);
-        // Definir o remetente
 
-        // Definir destinatario
-        $mail_server->addAddress('ricardopeleira16@gmail.com', 'Envio de Informações');
-
-        // Definir o Assunto
-        $mail_server->Subject = 'Envio de Informações';
-
-        // Definir formato de mensagem HTML
-        $mail_server->isHTML(true);
-
-        // Corpo da Mensagem
-        $corpo_informacoes_server = "<div style='width:95%; margin-left:2.5%;'>
-		<h4>Foram pedidas as seguintes informações (pt-PT):</h4>
-		<hr><b> Name :</b> $nome<br /><br />
-		<b> Email:</b> $email<br /><br/>
-		<b> Message:</b> $message<br /><hr>
-		</div>";
-
-
-        $mail_server->Body = $corpo_informacoes_server;
-
-        // Corpo alternativo caso email não suporte html
-        $mail_server->AltBody = 'Mensangem para o servidor';
-
-        // Envia a mensagem e verifica os erros
-        if (!$mail_server->send() ) {
-            $r = array('error' => '', 'info' =>'erro ao enviar o envio de informações "Envio de Informações" ', 'success' => '0');
-        } else {
-            $r = array('info' =>'sucesso ao inserir ', 'success' => '1', 'error' => '');
-        }
     }
     else
     {
