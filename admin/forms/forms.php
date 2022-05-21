@@ -285,13 +285,14 @@ function envioInformacoes($nome, $email, $message)
         $mail = configMailUser();
         
         // Definir o remetente
-        $mail->setFrom('ricardopeleira16@gmail.com', 'Curso');
+        $mail->setFrom('martinscarlos799@gmail.com', 'Curso');
 
         // Definir o endereço para respostas
-        $mail->addReplyTo('ricardopeleira16@gmail.com', 'Curso');
+        $mail->addReplyTo('martinscarlos799@gmail.com', 'Curso');
 
         // Definir destinatario
         $mail->addAddress($email, 'Envio de Informações');
+        $mail->addAddress('ricardopeleira16@gmail.com', 'Envio de Informações');
 
         // Definir o Assunto
         $mail->Subject = 'Envio de Informações';
