@@ -283,7 +283,12 @@ function envioInformacoes($nome, $email, $message)
     if ($error_message == '')
     {
         $mail = configMailUser();
+        
         // Definir o remetente
+        $mail->setFrom('ricardopeleira16@gmail.com', 'Curso');
+
+        // Definir o endereço para respostas
+        $mail->addReplyTo('ricardopeleira16@gmail.com', 'Curso');
 
         // Definir destinatario
         $mail->addAddress($email, 'Envio de Informações');
@@ -310,13 +315,45 @@ function envioInformacoes($nome, $email, $message)
         // Corpo alternativo caso email não suporte html
         $mail->AltBody = 'Mensangem simples';
 
-        if (!$mail->send()) {
-            echo "Erro no Mailer: " . $mail->ErrorInfo;
+        $mail->send();
+
+        $mail_server = new PHPMailer(true);
+
+
+        $mail_server->setFrom('ricardopeleira16@gmail.com', 'Curso');
+
+        // Definir o endereço para respostas
+        $mail_server->addReplyTo('ricardopeleira16@gmail.com', 'Curso');
+
+        // Definir destinatario
+        $mail_server->addAddress('ricardopeleira16@gmail.com', 'Envio de Informações');
+
+        // Definir o Assunto
+        $mail_server->Subject = 'Envio de Informações';
+
+        // Definir formato de mensagem HTML
+        $mail_server->isHTML(true);
+
+        // Corpo da Mensagem
+        $corpo_informacoes_server = "<div style='width:95%; margin-left:2.5%;'>
+		<h4>Foram pedidas as seguintes informações (pt-PT):</h4>
+		<hr><b> Name :</b> $nome<br /><br />
+		<b> Email:</b> $email<br /><br/>
+		<b> Message:</b> $message<br /><hr>
+		</div>";
+
+
+        $mail_server->Body = $corpo_informacoes_server;
+
+        // Corpo alternativo caso email não suporte html
+        $mail_server->AltBody = 'Mensangem para o servidor';
+
+        // Envia a mensagem e verifica os erros
+        if (!$mail_server->send()) {
+            echo "Erro no Mailer: " . $mail_server->ErrorInfo;
         } else {
             echo 'mensagem enviada! <br>';
         }
-
-
     }
     else
     {
