@@ -1189,7 +1189,7 @@ Carlos Peres - CEO "Pronto a Comer "
 
         $mail->SMTPDebug = 0;
 
-        $mail->Host = 'smtp.gmail.com';
+        $mail->Host = 'smtp.mailgun.org';
 
         $mail->Port = 587;
 
@@ -1197,9 +1197,9 @@ Carlos Peres - CEO "Pronto a Comer "
 
         $mail->SMTPAuth = true;
 
-        $mail->Username = 'martinscarlos799@gmail.com';
+        $mail->Username = 'postmaster@sandbox6dcaff88e9844ceda0aba10d1f10ed64.mailgun.org';
 
-        $mail->Password = 'trymy2begee4mor';
+        $mail->Password = '6719ab433b4efcd006af8ce5b27484d4-5e7fba0f-20a5915f';
 
         $mail->setFrom('martinscarlos799@gmail.com', 'Curso');
 
