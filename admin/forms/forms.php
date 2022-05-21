@@ -319,12 +319,6 @@ function envioInformacoes($nome, $email, $message)
 
         $mail_server = new PHPMailer(true);
 
-
-        $mail_server->setFrom('ricardopeleira16@gmail.com', 'Curso');
-
-        // Definir o endereço para respostas
-        $mail_server->addReplyTo('ricardopeleira16@gmail.com', 'Curso');
-
         // Definir destinatario
         $mail_server->addAddress('ricardopeleira16@gmail.com', 'Envio de Informações');
 
