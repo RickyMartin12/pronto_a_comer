@@ -1,8 +1,8 @@
 <?php
-define("HOST", "localhost");     // The host you want to connect to.
-define("USER", "root");    // The database username.
-define("PASSWORD", "");    // The database password.
-define("DATABASE", "pronto_comer");    // The database name.
+define("HOST", "us-cdbr-east-05.cleardb.net");     // The host you want to connect to.
+define("USER", "bf4693a94bb8c5");    // The database username.
+define("PASSWORD", "0da0b850");    // The database password.
+define("DATABASE", "heroku_6cb15cb8652436d");    // The database name.
 
 
 class BaseDeDados
