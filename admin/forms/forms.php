@@ -1216,6 +1216,8 @@ Carlos Peres - CEO "Pronto a Comer "
 
         $mail->AltBody = 'Mensangem simples';
 
+        $mail->addStringAttachment($attachment, $filename, 'base64', 'application/pdf');
+
         if (!$mail->send()) {
             echo "Erro no Mailer: " . $mail->ErrorInfo;
         } else {
