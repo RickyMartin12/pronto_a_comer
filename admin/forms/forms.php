@@ -1221,9 +1221,9 @@ Carlos Peres - CEO "Pronto a Comer "
 
         // Envia a mensagem e verifica os erros
         if (!$mail->send()) {
-            $r = array('error' => '', 'info' =>'erro ao enviar o envio de informações "Envio de Informações" ', 'success' => '0');
+            echo "Erro no Mailer: " . $mail->ErrorInfo;
         } else {
-            $r = array('info' =>'sucesso ao actualizar a reserva ', 'id' => $id, 'success' => '1', 'error' => '');
+            echo 'mensagem enviada! <br>';
         }
 
         /*$r = array('info' =>'sucesso ao actualizar a reserva ', 'id' => $id, 'success' => '1', 'error' => '');
