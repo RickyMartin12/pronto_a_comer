@@ -1177,7 +1177,51 @@ Carlos Peres - CEO "Pronto a Comer "
         $mpdf = new \Mpdf\Mpdf();
         $mpdf->WriteHTML($html_edit);
 
-        echo $p;
+
+        $filename = "Reserva de edição - ".$id.".pdf";
+
+        $attachment = $mpdf->Output($filename, 'S');
+
+        $mail = new PHPMailer(true);
+
+        $mail->CharSet = 'UTF-8';
+
+        $mail->isSMTP();
+
+        $mail->SMTPDebug = 0;
+
+        $mail->Host = 'smtp.mailgun.org';
+
+        $mail->Port = 587;
+
+        $mail->SMTPSecure = 'tls';
+
+        $mail->SMTPAuth = true;
+
+        $mail->Username = 'postmaster@sandbox6dcaff88e9844ceda0aba10d1f10ed64.mailgun.org';
+
+        $mail->Password = '6719ab433b4efcd006af8ce5b27484d4-5e7fba0f-20a5915f';
+
+        $mail->setFrom('martinscarlos799@gmail.com', 'Curso');
+
+        $mail->addReplyTo('martinscarlos799@gmail.com', 'Curso');
+
+        $mail->addAddress($email_pessoa_edit, 'Destinatário');
+
+        $mail->Subject = 'Reservas';
+
+        $mail->isHTML(true);
+
+        $mail->Body = 'Uma mensagem <strong> Negrito </strong>';
+
+        $mail->AltBody = 'Mensangem simples';
+
+        if (!$mail->send()) {
+            echo "Erro no Mailer: " . $mail->ErrorInfo;
+        } else {
+            echo 'mensagem enviada! <br>';
+        }
+
 
         /*$filename = "Reserva de edição - ".$id.".pdf";
 
