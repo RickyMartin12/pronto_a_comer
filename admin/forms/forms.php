@@ -1177,6 +1177,8 @@ Carlos Peres - CEO "Pronto a Comer "
         $mpdf = new \Mpdf\Mpdf();
         $mpdf->WriteHTML($html_edit);
 
+        echo $p;
+
         /*$filename = "Reserva de edição - ".$id.".pdf";
 
         $attachment = $mpdf->Output($filename, 'S');
