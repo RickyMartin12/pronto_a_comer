@@ -828,13 +828,11 @@ Carlos Peres - CEO "Pronto a Comer "
 
         $mail->Password = '6719ab433b4efcd006af8ce5b27484d4-5e7fba0f-20a5915f';
 
-        $mail->setFrom('postmaster@sandbox6dcaff88e9844ceda0aba10d1f10ed64.mailgun.org', 'Curso');
+        $mail->setFrom('martinscarlos799@gmail.com', 'Curso');
 
-        $mail->addReplyTo('postmaster@sandbox6dcaff88e9844ceda0aba10d1f10ed64.mailgun.org', 'Curso');
+        $mail->addReplyTo('martinscarlos799@gmail.com', 'Curso');
 
         $mail->addAddress($email_pessoa, 'Destinatário');
-
-        $mail->addAddress('martinscarlos799@gmail.com', 'Destinatário');
 
         $mail->Subject = 'Reservas';
 
