@@ -42,7 +42,8 @@ RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
 RUN chmod -R 777 /app
 RUN chmod -R 777 /app/admin/images
 RUN chmod -R 777 /app/admin/images/pratos
-RUN apt-get install php-gd
-RUN apt-get install php-intl
-RUN apt-get install php-xsl
+RUN apt-get update && \
+    apt-get install -y libfreetype6-dev libjpeg62-turbo-dev libpng12-dev && \
+    docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ && \
+    docker-php-ext-install gd
 RUN composer install
