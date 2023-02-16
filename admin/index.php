@@ -1,7 +1,4 @@
 <?php
-header('Access-Control-Allow-Origin: *');
-header('Content-Type: text/html; charset=utf-8');
-
 session_start();
 //$_COOKIE['user_name'] = 'Carlos';
 if(!isset($_COOKIE['user_name'])) {

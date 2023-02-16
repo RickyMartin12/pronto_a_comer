@@ -228,10 +228,9 @@ $mail->SMTPAuth = true;
  * auth_username=martinscarlos799@gmail.com
     auth_password=trymy2begee4mor
  */
-$mail->Username = 'postmaster@sandbox6dcaff88e9844ceda0aba10d1f10ed64.mailgun.org';
+$mail->Username = 'ricardopeleira16@gmail.com'; // SMTP username from https://mailgun.com/cp/domains
 
-// Senha para SMTP authentication
-$mail->Password = '6719ab433b4efcd006af8ce5b27484d4-5e7fba0f-20a5915f';
+$mail->Password = 'npgnxhymkcxeoobc'; // SMTP password from https://mailgun.com/cp/domains
 
 // Definir o remetente
 $mail->setFrom('ricardopeleira16@gmail.com', 'Curso');
