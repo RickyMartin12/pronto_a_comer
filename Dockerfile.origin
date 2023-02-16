@@ -21,9 +21,15 @@ RUN set -ex; \
     echo "opcache.memory_consumption = 32"; \
   } > "$PHP_INI_DIR/conf.d/cloud-run.ini"
 
+
+# Install composer:
+RUN wget https://raw.githubusercontent.com/composer/getcomposer.org/1b137f8bf6db3e79a38a5bc45324414a6b1f9df2/web/installer -O - -q | php -- --quiet
+RUN mv composer.phar /usr/local/bin/composer
+
+
 # Copy in custom code from the host machine.
 WORKDIR /app/
-COPY . /app
+#COPY . /app
 
 # Use the PORT environment variable in Apache configuration files.
 # https://cloud.google.com/run/docs/reference/container-contract#port
@@ -37,4 +43,5 @@ RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
 RUN chmod -R 777 /app
 RUN chmod -R 777 /app/admin/images
 RUN chmod -R 777 /app/admin/images/pratos
-RUN composer install --no-scripts --no-autoloader
+RUN composer install
+COPY . /app
