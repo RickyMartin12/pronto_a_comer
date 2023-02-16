@@ -250,12 +250,12 @@ function configMailUser()
     $mail->CharSet = 'UTF-8';
     $mail->isSMTP();
     $mail->SMTPDebug = 0;
-    $mail->Host = 'smtp.mailgun.org';
+    $mail->Host = 'smtp.gmail.com';
     $mail->Port = 587;
     $mail->SMTPSecure = 'tls';
     $mail->SMTPAuth = true;
-    $mail->Username = 'postmaster@sandbox6dcaff88e9844ceda0aba10d1f10ed64.mailgun.org';
-    $mail->Password = '6719ab433b4efcd006af8ce5b27484d4-5e7fba0f-20a5915f';
+    $mail->Username = 'ricardopeleira16@gmail.com'; // SMTP username from https://mailgun.com/cp/domains
+    $mail->Password = 'npgnxhymkcxeoobc'; // SMTP password from https://mailgun.com/cp/domains
     return $mail;
 }
 
@@ -824,9 +824,9 @@ Carlos Peres - CEO "Pronto a Comer "
 
         $mail->SMTPAuth = true;
 
-        $mail->Username = 'postmaster@sandbox6dcaff88e9844ceda0aba10d1f10ed64.mailgun.org';
+        $mail->Username = 'ricardopeleira16@gmail.com'; // SMTP username from https://mailgun.com/cp/domains
 
-        $mail->Password = '6719ab433b4efcd006af8ce5b27484d4-5e7fba0f-20a5915f';
+        $mail->Password = 'npgnxhymkcxeoobc'; // SMTP password from https://mailgun.com/cp/domains
 
         $mail->setFrom('martinscarlos799@gmail.com', 'Curso');
 
@@ -1196,9 +1196,9 @@ Carlos Peres - CEO "Pronto a Comer "
 
         $mail->SMTPAuth = true;
 
-        $mail->Username = 'postmaster@sandbox6dcaff88e9844ceda0aba10d1f10ed64.mailgun.org';
-
-        $mail->Password = '6719ab433b4efcd006af8ce5b27484d4-5e7fba0f-20a5915f';
+        $mail->Username = 'ricardopeleira16@gmail.com'; // SMTP username from https://mailgun.com/cp/domains
+        
+        $mail->Password = 'npgnxhymkcxeoobc'; // SMTP password from https://mailgun.com/cp/domains
 
         $mail->setFrom('martinscarlos799@gmail.com', 'Curso');
 

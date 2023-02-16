@@ -1,9 +1,9 @@
 <?php
-define("HOST", "us-cdbr-east-05.cleardb.net");     // The host you want to connect to.
-define("USER", "bf4693a94bb8c5");    // The database username.
-define("PASSWORD", "0da0b850");    // The database password.
-define("DATABASE", "heroku_6cb15cb8652436d");    // The database name.
-
+define("HOST", "containers-us-west-200.railway.app");     // The host you want to connect to.
+define("USER", "root");    // The database username.
+define("PASSWORD", "VdyzWDBMIyboZh1cJkKe");    // The database password.
+define("DATABASE", "railway");    // The database name.
+define("PORT", "5792"); 
 
 class BaseDeDados
 {
@@ -27,7 +27,7 @@ class BaseDeDados
 
     // Ligação a Base de Dados
     private function Ligacao(){
-        $mysqli = mysqli_connect(HOST, USER, PASSWORD, DATABASE) or die("Ligação MySQL não foi conseguida!");
+        $mysqli = mysqli_connect(HOST, USER, PASSWORD, DATABASE, PORT) or die("Ligação MySQL não foi conseguida!");
         return $mysqli;
     }
 
