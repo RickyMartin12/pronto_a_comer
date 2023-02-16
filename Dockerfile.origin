@@ -42,4 +42,7 @@ RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
 RUN chmod -R 777 /app
 RUN chmod -R 777 /app/admin/images
 RUN chmod -R 777 /app/admin/images/pratos
+RUN sudo apt-get install php7.0-gd
+RUN sudo apt-get install php7.0-intl
+RUN sudo apt-get install php7.0-xsl
 RUN composer install
