@@ -1,0 +1,13 @@
+FROM ghcr.io/railwayapp/nixpacks:ubuntu-1675123887@sha256:333533685bd20add1a7cf3f4c9142c9775e207bb13a0fb8150471182cfe78d5d
+WORKDIR /app/
+COPY .nixpacks/nixpkgs-293a28df6d7ff3dec1e61e37cc4ee6e6c0fb0847.nix .nixpacks/nixpkgs-293a28df6d7ff3dec1e61e37cc4ee6e6c0fb0847.nix
+RUN nix-env -if .nixpacks/nixpkgs-293a28df6d7ff3dec1e61e37cc4ee6e6c0fb0847.nix && nix-collect-garbage -d
+COPY .nixpacks/assets /assets/
+RUN  mkdir -p /var/log/nginx && mkdir -p /var/cache/nginx
+
+RUN  composer install
+COPY . /app
+
+RUN chmod -R 777 /app
+RUN chmod -R 777 /app/admin/images
+RUN chmod -R 777 /app/admin/images/pratos
