@@ -37,5 +37,4 @@ RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
 RUN chmod -R 777 /app
 RUN chmod -R 777 /app/admin/images
 RUN chmod -R 777 /app/admin/images/pratos
-COPY composer.json composer.lock ./
 RUN composer install --no-scripts --no-autoloader
