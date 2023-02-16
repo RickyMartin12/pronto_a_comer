@@ -42,6 +42,13 @@ RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
 RUN chmod -R 777 /app
 RUN chmod -R 777 /app/admin/images
 RUN chmod -R 777 /app/admin/images/pratos
-#RUN docker-php-ext-install gd
-RUN composer require ext-gd
+RUN apt-get update && \
+    apt-get install -y \
+        zlib1g-dev 
+
+RUN docker-php-ext-install mbstring
+
+RUN docker-php-ext-install zip
+
+RUN docker-php-ext-install gd
 RUN composer install
