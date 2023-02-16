@@ -1,1 +1,0 @@
-RUN chmod -R 777 /app/admin/images/pratos

@@ -1,0 +1,5 @@
+WORKDIR /app/
+ADD . /app/
+RUN chmod -R 777 /app
+RUN chmod -R 777 /app/admin/images
+RUN chmod -R 777 /app/admin/images/pratos
