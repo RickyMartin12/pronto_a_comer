@@ -42,5 +42,6 @@ RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini"
 RUN chmod -R 777 /app
 RUN chmod -R 777 /app/admin/images
 RUN chmod -R 777 /app/admin/images/pratos
-RUN apt-get install libpng libpng-dev libjpeg-turbo-dev libwebp-dev zlib-dev libxpm-dev gd && docker-php-ext-install gd
+RUN docker-php-ext-install gd
+RUN composer require ext-gd
 RUN composer install
