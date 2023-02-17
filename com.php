@@ -6,8 +6,6 @@ define("PASSWORD", "VdyzWDBMIyboZh1cJkKe");    // The database password.
 define("DATABASE", "railway");    // The database name.
 define("PORT", "5792"); 
 
-// Enable MySQLi extension
-dl('mysqli.so');
 
 // Connect to the database
 $link = mysqli_connect(HOST, USER, PASSWORD, DATABASE, PORT);
