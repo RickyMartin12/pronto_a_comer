@@ -24,6 +24,8 @@ WORKDIR /var/www/html
 #RUN rm /var/www/html/index.html
 COPY . /var/www/html/.
 
+RUN chmod -R 777 /var/www/html/vendor
+RUN chmod -R 777 /var/www/html/admin
 RUN chmod -R 777 /var/www/html/admin/images
 RUN chmod -R 777 /var/www/html/admin/images/pratos
 
