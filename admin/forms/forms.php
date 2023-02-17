@@ -816,7 +816,7 @@ Carlos Peres - CEO "Pronto a Comer "
 
         $mail->SMTPDebug = 0;
 
-        $mail->Host = 'smtp.mailgun.org';
+        $mail->Host = 'smtp.gmail.com';
 
         $mail->Port = 587;
 
@@ -1188,7 +1188,7 @@ Carlos Peres - CEO "Pronto a Comer "
 
         $mail->SMTPDebug = 0;
 
-        $mail->Host = 'smtp.mailgun.org';
+        $mail->Host = 'smtp.gmail.com';
 
         $mail->Port = 587;
 
