@@ -205,7 +205,7 @@ $mail->SMTPDebug = 0;
   se sua rede não suportar SMTP over Ipv6
 */
 
-$mail->Host = 'smtp.mailgun.org';
+$mail->Host = 'smtp.gmail.com';
 
 /*
   Defina o numero da porta SMTP - 587 para autenticação TLS,
