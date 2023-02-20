@@ -56,12 +56,12 @@ $html = '
 }
 </style>
 
-<img src="logo/teste.png" class="center">
+<img src="logo/teste.jpg" class="center">
 <div class="botm"></div>
 <h3 style="text-align: center;" class="bolder"> Aqui & Agora - Conteudo da Reserva 1</h3>
 <div class="botm"></div>
 <div class="line-bord">
-<img src="logo/teste.png" class="right">
+<img src="logo/teste.jpg" class="right">
 <div class="modal-header title-black-white">
     <h4 class="modal-title bolder" style="color: #fff;"><img src="icons/agenda.svg" class="img-responsive"> Reserva Numero 1</h4> 
 </div>
