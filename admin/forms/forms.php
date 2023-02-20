@@ -687,19 +687,19 @@ function inserirReserva($nome_pessoa, $email_pessoa, $telefone, $data_reserva, $
 }
 </style>
 
-<img src="../../logo/teste.png" class="center">
+<img src="../../logo/teste.jpg" class="center">
 <div class="botm"></div>
 <h3 style="text-align: center;" class="bolder"> Pronto a Comer - Conteudo da Reserva '.$ultimo_id.'</h3>
 <div class="botm"></div>
 <div class="line-bord">
-<img src="../../logo/teste.png" class="right">
+<img src="../../logo/teste_fund.jpg" class="right">
 <div class="modal-header title-black-white">
     <h4 class="modal-title bolder" style="color: #fff;"><img src="../../icons/agenda.svg" class="img-responsive"> Reserva Numero '.$ultimo_id.'</h4> 
 </div>
 <div class="form-horizontal" id="form">
 <div class="panel-body" style="padding: 16px; margin-top: -10px;">
 <h5 class="col-xs-12 mylabel w3-padding-8 w3-card-2 align_div bolder"> 
-<img src="../../icons/user.png" class="img-responsive">&nbsp;&nbsp;Detalhes Pessoais
+<img src="../../icons/user.jpg" class="img-responsive">&nbsp;&nbsp;Detalhes Pessoais
 </h5>
 <div class="container">
 <div class="row">
@@ -723,7 +723,7 @@ function inserirReserva($nome_pessoa, $email_pessoa, $telefone, $data_reserva, $
 </div>
 
 <h5 class="col-xs-12 mylabel w3-padding-8 w3-card-2 align_div bolder"> 
-<img src="../../icons/open-book.png" class="img-responsive">&nbsp;&nbsp;Marcação da Reserva
+<img src="../../icons/book.jpg" class="img-responsive">&nbsp;&nbsp;Marcação da Reserva
 </h5>
 
 <div class="container">
@@ -746,7 +746,7 @@ function inserirReserva($nome_pessoa, $email_pessoa, $telefone, $data_reserva, $
 
 
 <h5 class="col-xs-12 mylabel w3-padding-8 w3-card-2 align_div bolder"> 
-<img src="../../icons/comer.png" class="img-responsive">&nbsp;&nbsp;Prato a reservar
+<img src="../../icons/comer.jpg" class="img-responsive">&nbsp;&nbsp;Prato a reservar
 </h5>
 
 <div class="container">
@@ -764,7 +764,7 @@ function inserirReserva($nome_pessoa, $email_pessoa, $telefone, $data_reserva, $
 
 
 <h5 class="col-xs-12 mylabel w3-padding-8 w3-card-2 align_div bolder"> 
-<img src="../../icons/com.png" class="img-responsive">&nbsp;&nbsp;Comentarios Finais
+<img src="../../icons/chat.jpg" class="img-responsive">&nbsp;&nbsp;Comentarios Finais
 </h5>
 
 <div class="container">
@@ -1058,19 +1058,19 @@ function editarReserva($id, $nome_pessoa_edit, $email_pessoa_edit, $telefone_edi
 }
 </style>
 
-<img src="../../logo/teste.png" class="center">
+<img src="../../logo/teste.jpg" class="center">
 <div class="botm"></div>
 <h3 style="text-align: center;" class="bolder"> Pronto a Comer - Conteudo da Reserva '.$id.'</h3>
 <div class="botm"></div>
 <div class="line-bord">
-<img src="../../logo/teste.png" class="right">
+<img src="../../logo/teste_fund.jpg" class="right">
 <div class="modal-header title-black-white">
     <h4 class="modal-title bolder" style="color: #fff;"><img src="../../icons/agenda.svg" class="img-responsive"> Reserva Numero '.$id.'</h4> 
 </div>
 <div class="form-horizontal" id="form">
 <div class="panel-body" style="padding: 16px; margin-top: -10px;">
 <h5 class="col-xs-12 mylabel w3-padding-8 w3-card-2 align_div bolder"> 
-<img src="../../icons/user.png" class="img-responsive">&nbsp;&nbsp;Detalhes Pessoais
+<img src="../../icons/user.jpg" class="img-responsive">&nbsp;&nbsp;Detalhes Pessoais
 </h5>
 <div class="container">
 <div class="row">
@@ -1094,7 +1094,7 @@ function editarReserva($id, $nome_pessoa_edit, $email_pessoa_edit, $telefone_edi
 </div>
 
 <h5 class="col-xs-12 mylabel w3-padding-8 w3-card-2 align_div bolder"> 
-<img src="../../icons/open-book.png" class="img-responsive">&nbsp;&nbsp;Marcação da Reserva
+<img src="../../icons/book.jpg" class="img-responsive">&nbsp;&nbsp;Marcação da Reserva
 </h5>
 
 <div class="container">
@@ -1117,7 +1117,7 @@ function editarReserva($id, $nome_pessoa_edit, $email_pessoa_edit, $telefone_edi
 
 
 <h5 class="col-xs-12 mylabel w3-padding-8 w3-card-2 align_div bolder"> 
-<img src="../../icons/comer.png" class="img-responsive">&nbsp;&nbsp;Prato a reservar
+<img src="../../icons/comer.jpg" class="img-responsive">&nbsp;&nbsp;Prato a reservar
 </h5>
 
 <div class="container">
@@ -1135,7 +1135,7 @@ function editarReserva($id, $nome_pessoa_edit, $email_pessoa_edit, $telefone_edi
 
 
 <h5 class="col-xs-12 mylabel w3-padding-8 w3-card-2 align_div bolder"> 
-<img src="../../icons/com.png" class="img-responsive">&nbsp;&nbsp;Comentarios Finais
+<img src="../../icons/chat.jpg" class="img-responsive">&nbsp;&nbsp;Comentarios Finais
 </h5>
 
 <div class="container">

@@ -92,7 +92,7 @@ $html = '
 </div>
 
 <h5 class="col-xs-12 mylabel w3-padding-8 w3-card-2 align_div bolder"> 
-<img src="icons/open_book.jpg" class="img-responsive">&nbsp;&nbsp;Marcação da Reserva
+<img src="icons/book.jpg" class="img-responsive">&nbsp;&nbsp;Marcação da Reserva
 </h5>
 
 <div class="container">
@@ -115,7 +115,7 @@ $html = '
 
 
 <h5 class="col-xs-12 mylabel w3-padding-8 w3-card-2 align_div bolder"> 
-<img src="icons/comer.png" class="img-responsive">&nbsp;&nbsp;Prato a reservar
+<img src="icons/comer.jpg" class="img-responsive">&nbsp;&nbsp;Prato a reservar
 </h5>
 
 <div class="container">
@@ -133,7 +133,7 @@ $html = '
 
 
 <h5 class="col-xs-12 mylabel w3-padding-8 w3-card-2 align_div bolder"> 
-<img src="icons/comment.jpg" class="img-responsive">&nbsp;&nbsp;Comentarios Finais
+<img src="icons/chat.jpg" class="img-responsive">&nbsp;&nbsp;Comentarios Finais
 </h5>
 
 <div class="container">
