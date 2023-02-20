@@ -68,7 +68,7 @@ $html = '
 <div class="form-horizontal" id="form">
 <div class="panel-body" style="padding: 16px; margin-top: -10px;">
 <h5 class="col-xs-12 mylabel w3-padding-8 w3-card-2 align_div bolder"> 
-<img src="icons/user.png" class="img-responsive">&nbsp;&nbsp;Detalhes Pessoais
+<img src="icons/user.jpg" class="img-responsive">&nbsp;&nbsp;Detalhes Pessoais
 </h5>
 <div class="container">
 <div class="row">
@@ -92,7 +92,7 @@ $html = '
 </div>
 
 <h5 class="col-xs-12 mylabel w3-padding-8 w3-card-2 align_div bolder"> 
-<img src="icons/open-book.png" class="img-responsive">&nbsp;&nbsp;Marcação da Reserva
+<img src="icons/open_book.jpg" class="img-responsive">&nbsp;&nbsp;Marcação da Reserva
 </h5>
 
 <div class="container">
@@ -133,7 +133,7 @@ $html = '
 
 
 <h5 class="col-xs-12 mylabel w3-padding-8 w3-card-2 align_div bolder"> 
-<img src="icons/com.png" class="img-responsive">&nbsp;&nbsp;Comentarios Finais
+<img src="icons/comment.jpg" class="img-responsive">&nbsp;&nbsp;Comentarios Finais
 </h5>
 
 <div class="container">
