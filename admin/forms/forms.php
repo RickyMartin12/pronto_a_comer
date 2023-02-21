@@ -254,8 +254,9 @@ function configMailUser()
     $mail->Port = 587;
     $mail->SMTPSecure = 'tls';
     $mail->SMTPAuth = true;
-    $mail->Username = 'ricardopeleira16@gmail.com'; // SMTP username from https://mailgun.com/cp/domains
-    $mail->Password = 'npgnxhymkcxeoobc'; // SMTP password from https://mailgun.com/cp/domains
+    $mail->Username = 'ricardomanuelpeleira@gmail.com';
+    // Senha para SMTP authentication
+    $mail->Password = 'qcwrdlcthjenrtln';
     return $mail;
 }
 
@@ -824,9 +825,9 @@ Carlos Peres - CEO "Pronto a Comer "
 
         $mail->SMTPAuth = true;
 
-        $mail->Username = 'ricardopeleira16@gmail.com'; // SMTP username from https://mailgun.com/cp/domains
-
-        $mail->Password = 'npgnxhymkcxeoobc'; // SMTP password from https://mailgun.com/cp/domains
+        $mail->Username = 'ricardomanuelpeleira@gmail.com';
+        // Senha para SMTP authentication
+        $mail->Password = 'qcwrdlcthjenrtln';
 
         $mail->setFrom('martinscarlos799@gmail.com', 'Curso');
 
@@ -1196,9 +1197,9 @@ Carlos Peres - CEO "Pronto a Comer "
 
         $mail->SMTPAuth = true;
 
-        $mail->Username = 'ricardopeleira16@gmail.com'; // SMTP username from https://mailgun.com/cp/domains
-        
-        $mail->Password = 'npgnxhymkcxeoobc'; // SMTP password from https://mailgun.com/cp/domains
+        $mail->Username = 'ricardomanuelpeleira@gmail.com';
+        // Senha para SMTP authentication
+        $mail->Password = 'qcwrdlcthjenrtln';
 
         $mail->setFrom('martinscarlos799@gmail.com', 'Curso');
 
