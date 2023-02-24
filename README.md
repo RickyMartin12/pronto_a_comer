@@ -1,8 +1,8 @@
 # pronto_a_comer
 
-Website: https://prontoacomer-production.up.railway.app/
+Website: https://pronto-comer.herokuapp.com/index.php
 
-Administrative website: https://prontoacomer-production.up.railway.app/admin
+Administrative website: https://pronto-comer.herokuapp.com/admin
 - username: admin
 - password: admin
 
