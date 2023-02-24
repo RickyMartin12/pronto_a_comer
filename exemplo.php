@@ -228,10 +228,10 @@ $mail->SMTPAuth = true;
  * auth_username=martinscarlos799@gmail.com
     auth_password=trymy2begee4mor
  */
-$mail->Username = 'ricardomanuelpeleira@gmail.com';
-// Senha para SMTP authentication
-$mail->Password = 'qcwrdlcthjenrtln';
+$mail->Username = 'ricardopeleira16@gmail.com';
 
+// Senha para SMTP authentication
+$mail->Password = 'mktiolwmvnzbsjai';
 // Definir o remetente
 $mail->setFrom('ricardopeleira16@gmail.com', 'Curso');
 

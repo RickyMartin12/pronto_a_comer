@@ -254,9 +254,9 @@ function configMailUser()
     $mail->Port = 587;
     $mail->SMTPSecure = 'tls';
     $mail->SMTPAuth = true;
-    $mail->Username = 'ricardomanuelpeleira@gmail.com';
+    $mail->Username = 'ricardopeleira16@gmail.com';
     // Senha para SMTP authentication
-    $mail->Password = 'qcwrdlcthjenrtln';
+    $mail->Password = 'mktiolwmvnzbsjai';
     return $mail;
 }
 
@@ -825,9 +825,10 @@ Carlos Peres - CEO "Pronto a Comer "
 
         $mail->SMTPAuth = true;
 
-        $mail->Username = 'ricardomanuelpeleira@gmail.com';
+        $mail->Username = 'ricardopeleira16@gmail.com';
+
         // Senha para SMTP authentication
-        $mail->Password = 'qcwrdlcthjenrtln';
+        $mail->Password = 'mktiolwmvnzbsjai';
 
         $mail->setFrom('martinscarlos799@gmail.com', 'Curso');
 
@@ -1197,9 +1198,10 @@ Carlos Peres - CEO "Pronto a Comer "
 
         $mail->SMTPAuth = true;
 
-        $mail->Username = 'ricardomanuelpeleira@gmail.com';
+        $mail->Username = 'ricardopeleira16@gmail.com';
+
         // Senha para SMTP authentication
-        $mail->Password = 'qcwrdlcthjenrtln';
+        $mail->Password = 'mktiolwmvnzbsjai';
 
         $mail->setFrom('martinscarlos799@gmail.com', 'Curso');
 

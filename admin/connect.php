@@ -1,9 +1,9 @@
 <?php
-define("HOST", "containers-us-west-200.railway.app");     // The host you want to connect to.
-define("USER", "root");    // The database username.
-define("PASSWORD", "VdyzWDBMIyboZh1cJkKe");    // The database password.
-define("DATABASE", "railway");    // The database name.
-define("PORT", "5792"); 
+define("HOST", "us-cdbr-east-06.cleardb.net");     // The host you want to connect to.
+define("USER", "b33f36e59e5dd3");    // The database username.
+define("PASSWORD", "e264ec8d");    // The database password.
+define("DATABASE", "heroku_e950e0cf63e5df2");    // The database name.
+define("PORT", "3306"); 
 
 class BaseDeDados
 {
